@@ -1,1 +1,22 @@
-.header {}
+.header {
+  margin-bottom: 1%;
+  width: 50vw;
+  color: var(--text-and-frames);
+  text-align: center;
+  border: 2px solid var(--text-and-frames);
+  border-radius: 5px;
+}
+
+.header p {
+  margin: 0;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.header p:first-child {
+  padding-bottom: 0;
+}
+
+.header-hidden {
+  display: none;
+}

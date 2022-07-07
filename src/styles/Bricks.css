@@ -1,0 +1,39 @@
+.table__game-buttons {
+  text-align: center;
+  background-color: var(--button);
+  color: var(--text-and-frames);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.table__game-buttons-hidden {
+  display: none;
+}
+
+.table__game-buttons.buttons-16 {
+  min-width: 23%;
+  min-height: 20%;
+  margin: 1%;
+}
+
+.table__game-buttons.buttons-24 {
+  min-width: 23%;
+  min-height: 20%;
+  margin: 1%;
+}
+
+.table__game-buttons.buttons-32 {}
+
+.table__game-buttons.buttons-48 {}
+
+.table__game-buttons.buttons-66 {
+  min-width: 8%;
+  min-height: 12%;
+  margin: .5%;
+}
+
+.table__game-buttons:disabled {
+  background-color: var(--button-disabled);
+}

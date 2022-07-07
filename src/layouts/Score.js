@@ -1,8 +1,14 @@
 import React from 'react';
+import ScoreContainer from '../components/ScoreContainer';
+import '../styles/Score.css';
 
-const Score = () => {
+const Score = (props) => {
+  const {buttonContent, randomNumbers, buttonContentChanger} = props;
   return ( 
-    <div>Punkty</div>
+    <>
+      {buttonContent === 'Zaczynamy!' ? <button className='button-start' onClick={buttonContentChanger}>{buttonContent}</button> : <ScoreContainer  randomNumbers={randomNumbers} buttonContent={buttonContent}/>}
+    </>
+    
    );
 }
  

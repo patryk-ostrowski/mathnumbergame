@@ -1,5 +1,12 @@
-.container-bricks {
-  background-color: gray;
+.container-bricks-unloaded {
+  display: flex;
+  height: 10vh;
   width: 80vw;
+}
+
+.container-bricks-loaded {
+  display: flex;
+  flex-wrap: wrap;
   height: 70vh;
+  width: 80vw;
 }

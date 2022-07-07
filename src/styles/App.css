@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --text-and-frames: rgb(216, 216, 216);
+  --button: rgb(0, 0, 0, .5);
+  --button-disabled: rgba(0, 0, 0, .8);
+}
+
 .main-container {
   display: flex;
   flex-direction: column;

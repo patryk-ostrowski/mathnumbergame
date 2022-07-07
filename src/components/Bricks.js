@@ -1,34 +1,11 @@
 import React from 'react';
-import { useState } from 'react'
+import '../styles/Bricks.css';
 
-const Bricks = () => {
-  const [numberOfBricks, setNumberOfBricks] = useState(9)
-  const [numbers, setNumbers] = useState([])
-  const [numberValue, setNuberValue] = useState(27)
-
-  const randomNumbers = () => {
-    const numbersTable = []
-      for (let i=0; i<numberOfBricks; i++) {
-        const number = Math.floor(Math.random()*numberValue);
-        numbersTable.push(number)
-      }
-      console.log(numbersTable);
-    return setNumbers(numbersTable)
-  }
-  
-
+const Bricks = (props) => {
+  const {classNameToBlocks, buttonClicker, buttonContent, numbersToButtons} = props;
   return ( 
     <>
-      <button onClick={randomNumbers}>Klik</button>
-      <div>{numbers}</div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
+      {numbersToButtons.map((item, index) => <button key={index} className={buttonContent === "Zaczynamy!" ? 'table__game-buttons-hidden' : classNameToBlocks} onClick={buttonClicker}>{item}</button>)}
     </>
   );
 }
